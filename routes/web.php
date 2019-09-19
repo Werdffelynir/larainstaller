@@ -1,5 +1,8 @@
 <?php
 
+use \Illuminate\Support\Facades\Auth;
+use \Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +14,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+
+Route::get('/', 'ViewController@main')->name('main');
+Route::get('/profile', 'ViewController@profile')->name('profile');
+Route::get('/dashboard', 'ViewController@dashboard')->name('dashboard');
+Route::get('/projects', 'ViewController@projects')->name('projects');
+Route::get('/services', 'ViewController@services')->name('services');

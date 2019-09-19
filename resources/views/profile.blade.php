@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Main')
+@section('title', 'Profile')
 
 @section('sidebar')
     @parent
@@ -9,6 +9,6 @@
 @endsection
 
 @section('content')
-    <h2>Main</h2>
+    <h2>Profile</h2>
     <p>This is my body content.</p>
 @endsection
