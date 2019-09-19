@@ -36139,10 +36139,20 @@ var routes = [{
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   state: {
+    count: 0,
     showSidebar: false,
     showHeader: false
   },
-  mutations: {},
+  getters: {
+    doubleCount: function doubleCount(state) {
+      return state.count * 2;
+    }
+  },
+  mutations: {
+    increment: function increment(state) {
+      state.count++;
+    }
+  },
   actions: {}
 });
 
