@@ -8,6 +8,7 @@ import VueAxios from 'vue-axios';
 
 import ExampleComponent from './components/ExampleComponent.vue';
 import MenuComponent from './components/MenuComponent.vue';
+import AppComponent from './components/AppComponent.vue';
 import vuetify from './plugins/vuetify'
 import store from './store';
 import routes from './routes';
@@ -37,6 +38,7 @@ new Vue({
     components: {
         'example-component': ExampleComponent,
         'menu-component': MenuComponent,
+        'app-component': AppComponent,
     },
 
     computed: {

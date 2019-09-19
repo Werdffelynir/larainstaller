@@ -11,16 +11,16 @@ class ViewController extends Controller
     public function main() {
         return view('main', []);
     }
-    public function profile() {
-        return view('profile', []);
-    }
     public function dashboard() {
-        return view('dashboard', []);
+        return view('main', []);
     }
-    public function projects() {
-        return view('dashboard', []);
+    public function profile() {
+        return view('main', []);
+    }
+    public function domains() {
+        return view('main', []);
     }
     public function services() {
-        return view('dashboard', []);
+        return view('main', []);
     }
 }

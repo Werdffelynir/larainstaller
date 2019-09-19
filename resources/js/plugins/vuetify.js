@@ -13,6 +13,7 @@ import Vuetify, {
     VBtn,
     VRating,
     VToolbar,
+    VToolbarItems,
     VStepper,
     VSpacer,
     VMenu,
@@ -25,6 +26,7 @@ import Vuetify, {
     VListItemIcon,
     VListItemContent,
     VListItemTitle,
+    VAvatar,
 } from 'vuetify/lib';
 import { Ripple } from 'vuetify/lib/directives';
 import colors from 'vuetify/lib/util/colors'
@@ -33,12 +35,14 @@ import 'vuetify/dist/vuetify.css';
 import "vue-material-design-icons/styles.css";
 
 import MenuIcon from "vue-material-design-icons/Menu.vue"
+import FountainPenIcon from "vue-material-design-icons/FountainPen.vue"
 import DiskIcon from "vue-material-design-icons/Disc.vue"
 import ArrowRightBoldIcon from "vue-material-design-icons/ArrowRightBold.vue"
 import FileOutlineIcon from "vue-material-design-icons/FileOutline.vue"
 
 const iconsComponents = {
     MenuIcon,
+    FountainPenIcon,
     DiskIcon,
     ArrowRightBoldIcon,
     FileOutlineIcon,
@@ -60,6 +64,7 @@ Vue.use(Vuetify, {
         VBtn,
         VRating,
         VToolbar,
+        VToolbarItems,
         VStepper,
         VSpacer,
         VMenu,
@@ -72,6 +77,7 @@ Vue.use(Vuetify, {
         VListItemIcon,
         VListItemContent,
         VListItemTitle,
+        VAvatar,
         ...{...iconsComponents},
     },
     directives: {
@@ -88,11 +94,11 @@ export default new Vuetify({
                 accent: colors.indigo.base,
             },
             dark: {
-                primary: colors.lime.darken1,
-                secondary: colors.lime.lighten4,
+                primary: colors.grey.darken1,
+                secondary: colors.grey.lighten4,
                 accent: colors.indigo.base,
             },
         },
-        dark: false,
+        dark: true,
     },
 })

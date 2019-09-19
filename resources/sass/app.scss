@@ -1,1 +1,14 @@
 //
+
+@import "./fonts";
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Nunito', 'Roboto', sans-serif;
+    color: #b9bbb7;
+}
+
+a {
+    text-decoration: none;
+}

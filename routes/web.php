@@ -20,7 +20,7 @@ use \Illuminate\Support\Facades\Route;
 
 
 Route::get('/', 'ViewController@main')->name('main');
-Route::get('/profile', 'ViewController@profile')->name('profile');
 Route::get('/dashboard', 'ViewController@dashboard')->name('dashboard');
-Route::get('/projects', 'ViewController@projects')->name('projects');
+Route::get('/profile', 'ViewController@profile')->name('profile');
+Route::get('/domains', 'ViewController@domains')->name('domains');
 Route::get('/services', 'ViewController@services')->name('services');
