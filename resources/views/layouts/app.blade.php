@@ -29,14 +29,18 @@
 <div id="app">
 
     <div id="header">
-        <div id="menu">
-            <ul>
-                <li><a href="{{ url('/') }}">Home</a></li>
-                <li><a href="{{ url('/profile') }}">Profile</a></li>
-                <li><a href="{{ url('/dashboard') }}">Dashboard</a></li>
-                <li><a href="{{ url('/projects') }}">Projects</a></li>
-                <li><a href="{{ url('/services') }}">Services</a></li>
-            </ul>
+        <div class="container">
+            <div id="menu">
+                <menu-component>
+                    <ul>
+                        <li><a href="{{ url('/') }}">Home</a></li>
+                        <li><a href="{{ url('/profile') }}">Profile</a></li>
+                        <li><a href="{{ url('/dashboard') }}">Dashboard</a></li>
+                        <li><a href="{{ url('/projects') }}">Projects</a></li>
+                        <li><a href="{{ url('/services') }}">Services</a></li>
+                    </ul>
+                </menu-component>
+            </div>
         </div>
     </div>
 
