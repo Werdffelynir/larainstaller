@@ -35069,9 +35069,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [{
+  name: 'FooComponent',
   path: '/foo',
   component: _components_FooComponent__WEBPACK_IMPORTED_MODULE_0__["default"]
 }, {
+  name: 'BarComponent',
   path: '/bar',
   component: _components_BarComponent__WEBPACK_IMPORTED_MODULE_1__["default"]
 }];

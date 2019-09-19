@@ -3,8 +3,14 @@ import BarComponent from './components/BarComponent';
 
 
 const routes = [
-    { path: '/foo', component: FooComponent },
-    { path: '/bar', component: BarComponent },
+    {
+        name: 'FooComponent',
+        path: '/foo',
+        component: FooComponent },
+    {
+        name: 'BarComponent',
+        path: '/bar',
+        component: BarComponent },
 ];
 
 export default routes;
