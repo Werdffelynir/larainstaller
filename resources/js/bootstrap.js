@@ -8,6 +8,7 @@ import VueAxios from 'vue-axios';
 
 import ExampleComponent from './components/ExampleComponent.vue';
 import MenuComponent from './components/MenuComponent.vue';
+import vuetify from './plugins/vuetify'
 import store from './store';
 import routes from './routes';
 
@@ -23,12 +24,15 @@ Vue.use(VueAxios, axios);
 
 const router = new VueRouter({
     mode: 'history',
-    store,
     routes,
 });
 
+Vue.config.productionTip = false;
+
 new Vue({
+    store,
     router,
+    vuetify,
     el: '#app',
     components: {
         'example-component': ExampleComponent,
