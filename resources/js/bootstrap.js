@@ -6,9 +6,8 @@ import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 import VueAxios from 'vue-axios';
 
-import ExampleComponent from './components/ExampleComponent.vue';
-import MenuComponent from './components/MenuComponent.vue';
-import AppComponent from './components/AppComponent.vue';
+import MenuComponent from './components/common/Menu';
+import AppComponent from './components/App.vue';
 import vuetify from './plugins/vuetify'
 import store from './store';
 import routes from './routes';
@@ -36,7 +35,6 @@ new Vue({
     vuetify,
     el: '#app',
     components: {
-        'example-component': ExampleComponent,
         'menu-component': MenuComponent,
         'app-component': AppComponent,
     },

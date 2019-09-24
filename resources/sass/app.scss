@@ -1,14 +1,25 @@
 //
 
 @import "./fonts";
+@import "./variables";
+@import './../../node_modules/material-icons/iconfont/material-icons.scss';
 
 html, body {
     width: 100vw;
     height: 100vh;
     font-family: 'Nunito', 'Roboto', sans-serif;
-    color: #b9bbb7;
+    color: $cDarkText;
 }
 
 a {
     text-decoration: none;
+}
+
+.copy span {
+    color: orange;
+}
+.copy {
+    width: 100%;
+    font-size: 0.9rem;
+    color: $cDarkTextSecond;
 }

@@ -18,7 +18,6 @@ use \Illuminate\Support\Facades\Route;
 //    return view('welcome');
 //});
 
-
 Route::get('/', 'ViewController@main')->name('main');
 Route::get('/dashboard', 'ViewController@dashboard')->name('dashboard');
 Route::get('/profile', 'ViewController@profile')->name('profile');

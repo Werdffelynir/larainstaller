@@ -1,7 +1,7 @@
 <template>
     <VApp>
         <VNavigationDrawer app clipped-x :width="sidebar ? 250 : 0">
-            <Sidebar />
+            <sidebar-component />
         </VNavigationDrawer>
 
         <VAppBar app >
@@ -9,7 +9,7 @@
                 <VBtn v-on:click="sidebarToggle"><ArrowRightBoldIcon /></VBtn>
             </template>
             <VSpacer></VSpacer>
-            <HeaderMenu />
+            <menu-component />
         </VAppBar>
 
         <VContent>
@@ -19,13 +19,13 @@
         </VContent>
 
         <VFooter app>
-            <VBtn icon> </VBtn>
+            <div class="copy text-right"><span>SunLight</span> Development &copy; 2019 </div>
         </VFooter>
     </VApp>
 </template>
 <script>
-    import Sidebar from './common/Sidebar.vue';
-    import HeaderMenu from './common/HeaderMenu.vue';
+    import SidebarComponent from './common/Sidebar.vue';
+    import MenuComponent from './common/Menu.vue';
 
     export default {
 
@@ -51,8 +51,8 @@
 
         computed: {},
         components: {
-            Sidebar,
-            HeaderMenu,
+            'sidebar-component': SidebarComponent,
+            'menu-component': MenuComponent,
         },
 
     }

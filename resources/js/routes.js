@@ -1,16 +1,36 @@
-import FooComponent from './components/FooComponent';
-import BarComponent from './components/BarComponent';
+import DashboardComponent from './components/Dashboard';
+import ProfileComponent from './components/Profile';
+import DomainsComponent from './components/Domains';
+import ServicesComponent from './components/Services';
+import ServiceDatabaseMysql from './components/ServiceDatabaseMysql';
+import ServiceDatabaseSqlite from './components/ServiceDatabaseSqlite';
 
 
 const routes = [
     {
-        name: 'FooComponent',
-        path: '/foo',
-        component: FooComponent },
+        name: 'Dashboard',
+        path: '/',
+        component: DashboardComponent },
     {
-        name: 'BarComponent',
-        path: '/bar',
-        component: BarComponent },
+        name: 'Profile',
+        path: '/profile',
+        component: ProfileComponent },
+    {
+        name: 'Domains',
+        path: '/domains',
+        component: DomainsComponent },
+    {
+        name: 'Services',
+        path: '/services',
+        component: ServicesComponent },
+    {
+        name: 'Service Database Mysql',
+        path: '/service/database/mysqli',
+        component: ServiceDatabaseMysql },
+    {
+        name: 'Service Database Sqlite',
+        path: '/service/database/sqlite',
+        component: ServiceDatabaseSqlite },
 ];
 
 export default routes;

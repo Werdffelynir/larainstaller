@@ -3,10 +3,12 @@ import Vuetify, {
     VApp,
     VNavigationDrawer,
     VContent,
+    VDivider,
     VFooter,
     VCard,
     VCardTitle,
     VCardText,
+    VCardActions,
     VContainer,
     VRow,
     VCol,
@@ -14,19 +16,25 @@ import Vuetify, {
     VRating,
     VToolbar,
     VToolbarItems,
+    VToolbarTitle,
+    VSubheader,
     VStepper,
     VSpacer,
     VMenu,
     VMenuTransition,
     VAppBar,
     VAppBarNavIcon,
+    VIcon,
     VList,
     VListItem,
-    VIcon,
     VListItemIcon,
     VListItemContent,
+    VListItemSubtitle,
     VListItemTitle,
+    VListItemAvatar,
     VAvatar,
+    VHover,
+    VImg,
 } from 'vuetify/lib';
 import { Ripple } from 'vuetify/lib/directives';
 import colors from 'vuetify/lib/util/colors'
@@ -39,6 +47,11 @@ import FountainPenIcon from "vue-material-design-icons/FountainPen.vue"
 import DiskIcon from "vue-material-design-icons/Disc.vue"
 import ArrowRightBoldIcon from "vue-material-design-icons/ArrowRightBold.vue"
 import FileOutlineIcon from "vue-material-design-icons/FileOutline.vue"
+import DomainIcon from "vue-material-design-icons/Domain.vue"
+// import DomainOffIcon from "vue-material-design-icons/DomainOff.vue"
+// import DomainPlusIcon from "vue-material-design-icons/DomainPlus.vue"
+// import DomainRemoveRemoveIcon from "vue-material-design-icons/DomainRemove.vue"
+import PlusIcon from "vue-material-design-icons/Plus.vue"
 
 const iconsComponents = {
     MenuIcon,
@@ -46,6 +59,8 @@ const iconsComponents = {
     DiskIcon,
     ArrowRightBoldIcon,
     FileOutlineIcon,
+    DomainIcon,
+    PlusIcon,
 };
 
 
@@ -54,10 +69,12 @@ Vue.use(Vuetify, {
         VApp,
         VNavigationDrawer,
         VContent,
+        VDivider,
         VFooter,
         VCard,
         VCardTitle,
         VCardText,
+        VCardActions,
         VContainer,
         VRow,
         VCol,
@@ -65,6 +82,8 @@ Vue.use(Vuetify, {
         VRating,
         VToolbar,
         VToolbarItems,
+        VToolbarTitle,
+        VSubheader,
         VStepper,
         VSpacer,
         VMenu,
@@ -76,8 +95,12 @@ Vue.use(Vuetify, {
         VIcon,
         VListItemIcon,
         VListItemContent,
+        VListItemSubtitle,
         VListItemTitle,
+        VListItemAvatar,
         VAvatar,
+        VHover,
+        VImg,
         ...{...iconsComponents},
     },
     directives: {

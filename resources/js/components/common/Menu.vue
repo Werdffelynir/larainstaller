@@ -27,9 +27,12 @@
 </template>
 
 <script>
+
+    import '../../../sass/components/menu.scss';
+
     export default {
 
-        name: 'HeaderMenu',
+        name: 'menu-component',
 
         data() {
             return {
